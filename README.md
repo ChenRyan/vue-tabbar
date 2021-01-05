@@ -1,4 +1,4 @@
-# supermall
+# vue-tabbar
 
 ## Project setup
 ```
