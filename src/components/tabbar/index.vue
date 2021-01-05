@@ -7,7 +7,8 @@
       v-for="(item, index) in tablist"
       :key="index"
       :url="item.url"
-      :color="item.color"
+      :default-color="item.defaultColor"
+      :active-color="item.activeColor"
     >
       <template v-slot:item-icon>
         <img :src="item.icon" />
@@ -33,7 +34,8 @@ const tablist = {
       iconActive: require("../../assets/img/home2.svg"),
       text: "首页",
       url: "/",
-      color: "",
+      defaultColor: "",
+      activeColor: "",
     },
     {
       icon: require("../../assets/img/home.svg"),

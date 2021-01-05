@@ -15,10 +15,14 @@ export default {
       type: String,
       default:'/about'
     },
-    color:{
+    defaultColor:{
+      type: String,
+      default:"#111"
+    },
+    activeColor:{
       type: String,
       default:"#1296DB"
-    }
+    },
   },
   data() {
     return {
@@ -36,7 +40,7 @@ export default {
       return this.$route.path == this.url
     },
     activeStyle(){
-        return this.active?{color: this.color}:{};
+        return this.active?{color: this.activeColor}:{color: this.defaultColor};
     }
   }
 }

@@ -14,35 +14,40 @@ const tablist = [
     iconActive: require("./assets/img/home2.svg"),
     text: "首页",
     url: "/",
-    color: "#1296DB",
+    defaultColor: "#111",
+    activeColor: "#1296DB",
   },
   {
     icon: require("./assets/img/video.svg"),
     iconActive: require("./assets/img/video2.svg"),
     text: "视频",
     url: "/video",
-    color: "#1296DB",
+    defaultColor: "#111",
+    activeColor: "#1296DB",
   },
   {
     icon: require("./assets/img/about.svg"),
     iconActive: require("./assets/img/about2.svg"),
     text: "关于",
     url: "/about",
-    color: "#1296DB",
+    defaultColor: "#111",
+    activeColor: "#1296DB",
   },
   {
     icon: require("./assets/img/activity.svg"),
     iconActive: require("./assets/img/activity2.svg"),
     text: "活动",
     url: "/activity",
-    color: "#1296DB",
+    defaultColor: "#111",
+    activeColor: "#1296DB",
   },
   {
     icon: require("./assets/img/my.svg"),
     iconActive: require("./assets/img/my2.svg"),
     text: "我的",
     url: "/my",
-    color: "#1296DB",
+    defaultColor: "#111",
+    activeColor: "#1296DB",
   },
 ];
 
@@ -66,7 +71,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  activeColor: #2c3e50;
 }
 
 #nav {
@@ -75,10 +80,10 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  activeColor: #2c3e50;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  activeColor: #42b983;
 }
 </style>
